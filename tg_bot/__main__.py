@@ -19,7 +19,12 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-Hi {}👋, I'm ADBZ Üç Bey {}! The Developer and Maintainer is [AK](tg://user?id={}) 
+Hi {}👋, I'm ADBZ Üç Bey {}! The Developer and Maintainer is [ADBZ Sultan](tg://user?id={}) 
+
+You can Add Me to your Group..... If you need any help about this Bot Just Contact My [Owner](tg://user?id={})☺️
+In order to know how to use me Join [ADBZ Turkish & Islamic Media](https://t.me/Turkish_Islamic_Media)......
+
+
 @Turkish_Islamic_Media
 """
 
@@ -140,9 +145,9 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="🎉 Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="🤖 Make Own Admin Bot", url="https://youtu.be/W6CLKrehy6w")],
-                     [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/KeralaBots"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/KochuUpdates")],
-                     [InlineKeyboardButton(text="🎬 Youtube Channel", url="https://www.youtube.com/stealthtechnogaming?sub_confirmation=1"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
+                    [[InlineKeyboardButton(text="🎉 Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="📲Our Group", url="https://youtu.be/W6CLKrehy6w")],
+                     [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/KeralaBots"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/Turkish_series_news")],
+                     [InlineKeyboardButton(text="🤖 Artuk Bey Bot", url="https://t.me/Artukbeyautobot"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
 
     else:
         update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
